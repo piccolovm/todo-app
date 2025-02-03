@@ -1,3 +1,8 @@
+Piccolo,
+
+if you are reading this, just fork this file. That way u will be able to edit this file and reply.
+try to do it with a personal git account, its safer. plzzzzzz, u can reply ateast.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
