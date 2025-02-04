@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import TodoForm from './components/TodoForm';
 import TodoItem from './components/TodoItem';
+import './toDo.css';
 
 function App() {
   const [tasks, setTasks] = useState([]); // tasks array
@@ -39,15 +40,24 @@ function App() {
   });
 
   return (
-    <div>
-      <h1>Todo App</h1>
+    <div className="app-container">
+      <h1 className="app-title">Todo App</h1>
       <TodoForm addTask={addTask} />
-      <div>
-        <button onClick={() => setFilter("All")}>All</button>
-        <button onClick={() => setFilter("Active")}>Active</button>
-        <button onClick={() => setFilter("Completed")}>Completed</button>
+      <div className="filter-buttons">
+        <button 
+          className={`filter-button ${filter === "All" ? "active" : ""}`} 
+          onClick={() => setFilter("All")}>All
+        </button>
+        <button 
+          className={`filter-button ${filter === "Active" ? "active" : ""}`} 
+          onClick={() => setFilter("Active")}>Active
+        </button>
+        <button 
+          className={`filter-button ${filter === "Completed" ? "active" : ""}`} 
+          onClick={() => setFilter("Completed")}>Completed
+        </button>
       </div>
-      <ul>
+      <ul className="task-list">
         {filteredTasks.map(task => (
           <TodoItem key={task.id} task={task} toggleTaskCompletion={toggleTaskCompletion} deleteTask={deleteTask} />
         ))}

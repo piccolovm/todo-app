@@ -2,14 +2,14 @@ import React from "react";
 
 function TodoItem({ task, toggleTaskCompletion, deleteTask }) {
   return (
-    <li>
+    <li className="task-item">
       <input 
         type="checkbox" 
         checked={task.completed} 
         onChange={() => toggleTaskCompletion(task.id)} 
       />
-      <span style={{ textDecoration: task.completed ? 'line-through' : 'none' }}>{task.text}</span>
-      <button onClick={() => deleteTask(task.id)}>Delete</button>
+      <span className={`task-text ${task.completed ? "completed" : ""}`}>{task.text}</span>
+      <button className="delete-button" onClick={() => deleteTask(task.id)}>Delete</button>
     </li>
   );
 }

@@ -11,14 +11,14 @@ function TodoForm({addTask}) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
+    <form className="todo-form" onSubmit={handleSubmit}>
+      <input className="task-input"
         type="text"
         value={taskText}
         onChange={(e) => setTaskText(e.target.value)}
         placeholder="Enter a task"
       />
-      <button type="submit">Add Task</button>
+      <button className="add-button" type="submit">Add Task</button>
     </form>
   );
 }
