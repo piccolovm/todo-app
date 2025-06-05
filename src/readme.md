@@ -5,7 +5,7 @@ That's y i m telling u that whatever u feeling now & trying to push me away is t
 
 Tell me your feelings idiot, i wanna know. Whatever it is, whatever you have not shared yet.
 Write to me idiot, whenever you can...you are my strenght idiot.
-how i feel about without u[:](https://www.youtube.com/watch?v=Y2NkuFIlLEo) 
+how i feel about without you -  https://www.youtube.com/watch?v=Y2NkuFIlLEo
 
 I am sharing the below creds for git...just login using this and relpy like directly editing the file.
 username - piccolovm
